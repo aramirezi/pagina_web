@@ -1,89 +1,401 @@
-<!DOCTYPE HTML>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta description="UNAD Página web - Grupo 30">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/css.css">
-  <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
-  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/prefixfree.min.js"></script>
-  <script type="text/javascript" src="js/menu.js"></script>
-  <title>Página web - Grupo 30</title>
-</head>
 
-<body>
-<header class="page-header">
-  <a href="https://www.unad.edu.co" target="_blank"><img src="img/logoUNAD.png" alt="Universidad Nacional Abierta y a Distancia" height="80%"></a>
-  <nav>
-    <ul>
-      <li><a href="#">INICIO <i class="fa fa-home" aria-hidden="true"></i></a></li>
-      <li><a href="#">GIT <i class="fa fa-git" aria-hidden="true"></i> <i class="fa fa-github" aria-hidden="true"></i></a></li>
-      <!-- Submenu (Por ahora deshabilitado)
-        <ul>
-          <li><a href="#">GITHUB</a></li>
-        </ul>
-      -->
-      <li><a href="#">HTML <i class="fa fa-html5" aria-hidden="true"></i></a></li>
-      <li><a href="#">CSS <i class="fa fa-css3" aria-hidden="true"></i></a></li>
-      <li><a href="#">AUTORES <i class="fa fa-users" aria-hidden="true"></i></a></li>
-    </ul>
-  </nav>
-</header>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
 
-<div id="contenedor">
-  <section>
-    <article >
-      <h2>Introducción</h2>
-      <p>Bienvenido al Objeto Virtual de Información (OVI) de Diseño de Sitios Web, diseñado para que pueda adquirir los conocimientos básicos para el uso de GIT, Github y Github Pages para la gestión de proyectos colaborativos y el uso de HTML5 y CCS3 para la creación de contenido en formato web (Página y Sitios Web)</p>
-      <p>Para acceder a los contenidos de manera secuencial puede hacer clic en el botón siguiente, si desea acceder a un recurso en específico puede buscarlo en el menú superior.</p>
-    </article>
-    <article>
-      <h2>Objetivos del OVI</h2>
-      <p>Construir un OVI para introducir, profundizar sobre el uso de GIT y GITHUB para gestionar proyectos colaborativos de diseño web, al igual que HTML5 y CSS3 para creación de contenidos en formato web (Paginas y Sitios Web)</p>
-    </article>
-    <article>
-      <h2>Objetivos del Curso</h2>
-      <ul class="fa-ul">
-        <li><i class="fa-li fa fa-check-square"></i> Enseñar al lector del OVI los conceptos básicos para el uso de GIT y GITHUB para crear y gestionar proyectos colaborativos de diseño web</li>
-        <li><i class="fa-li fa fa-check-square"></i> Enseñar al lector del OVI los conceptos básicos para el uso del lenguaje de etiquetas HTML5 para la creación de contenido WEB</li>
-        <li><i class="fa-li fa fa-check-square"></i> Enseñar al lector del OVI los conceptos básicos para el uso del lenguaje de estilos CCS5 para la creación estilos para el contenido WEB</li>
-      </ul>
-    </article>
-  </section>
+    <title>Inicio - Universidad Nacional Abierta y a Distancia</title>
+	
+	<!-- Font Awesome core CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	
+	<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <aside class="twitter">
-  <a class="twitter-timeline" data-lang="es" data-width="300px" data-height="590px" data-link-color="#005883" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+
+	<style type="text/css">
+		.logoUnad{
+			padding: 20px 20px 20px 20px;
+		}
+
+
+		.menu-fixed {
+
+			z-index:1000;
+
+			/*left:0;*/
+			/*Podemos hacer que el menu abarque el 100% al hacer scroll*/
+			box-shadow:0px 4px 3px rgba(0,0,0,.5);
+		}
+
+		footer{
+			background: #000;
+			height: auto;
+			text-align: center;
+			color: #fff;
+		}
+
+		#navbarCollapse ul i a{
+			font-color:red;
+		}
+
+.col-center{
+    float: none;
+    margin: 0 auto;
+}
+
+.footerCustom{
+	text-align: center;
+	color: #fff;
+	padding:2px;
+}
+
+.footerBloque2{
+	padding: 20px 20px 20px 20px;
+	color: #fff;
+}
+
+.navbar-nav a {
+	color:red !important;
+}
+
+
+/*=========================
+  Icons
+ ================= */
+
+/* footer social icons */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.social-circle a {
+ background-color: #D3D3D3;   
+}
+
+    
+	</style>
+  </head>
+  <body>
+
+    <header>
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-white menu menu-fixed">
+
+      	<a href="index.html"><img class="logoUnad" src="img/logoUNAD.png" width="355px"></a>
+        <a class="navbar-brand" href="#">Carousel</a>
+        <button class="navbar-toggler bg-dark " type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+       
+    </header>
+
+    <main role="main">
+		
+
+
+
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+     
+      </div>
+      <br><br>
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+   
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto contenedor-img ejemplo-1" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+		
+		 <hr class="featurette-divider">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+
+          <div class="col-lg-4">
+            <i class="fa fa-git fa-5 rounded-circle" style="width: 140px !important;height:140px !important;background: #4C4C4E;font-size: 70px;vertical-align: middle !important;padding-top: 10%;color:#fff !important;"></i>
+            <h2>GIT</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Ver M&aacute;s &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+      
+
+          <div class="col-lg-4">
+         <i class="fa fa-html5 fa-5 rounded-circle" style="width: 140px !important;height:140px !important;background: #FF5733;font-size: 70px;vertical-align: middle !important;padding-top: 10%;color:#fff !important;"></i>
+           
+            <h2>HTML 5</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Ver M&aacute;s &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+
+          <div class="col-lg-4">
+            <i class="fa fa-css3 fa-5 rounded-circle" style="width: 140px !important;height:140px !important;background: #3570F9;font-size: 70px;vertical-align: middle !important;padding-top: 10%;color:#fff !important;"></i>
+            <h2>CSS 3</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Ver M&aacute;s &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+  		</div><!-- /.row -->
+
+        
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+          	    <aside class="twitter">
+  <a class="twitter-timeline" data-lang="es" data-width="300px" data-height="580px" data-link-color="#005883" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </aside>
-</div>
 
-<article class="btn">
 
-</article>
+           
+          </div>
+        </div>
 
-<footer>
-  <div id="footer">
-    <div id="creditos">
-      <p>Desarrollado por:</p>
-      <ul>
-        <li>Julián Andrés Osorio López</li>
-        <li>Nombre 2</li>
-        <li>Nombre 3</li>
-        <li>Nombre 4</li>
-      </ul>
-    </div>
-    <div id="contador">
-      <p>Contador de visitas:</p>
-      <a href="https://www.cerotec.net/estadisticas-112192/aramirezi.github.io" title="ir a gráficas y estadísticas"><img src="https://www.cerotec.net/contador.php?t=4&s=4&i=112192" alt="Contador de visitas y estadísticas"></a> 
-    </div>
 
-    </div>
-  </div>
 
-</footer>
 
-</body>
 
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+
+
+
+
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container-expand-md container-dark bg-black">
+
+      <div class="container">
+		<div class="row">
+			<div class="col-md-7" >
+				<div class="row" style="padding: 20px 20px 20px 20px;">
+					<div class="col-md-4 col-md-offset-3 col-center">
+						<img src="img/logoFooter.png" width="90">
+						<br /><br />
+						<p style="font-size: 10px;">
+							Sede nacional José Celestino Mutis: Calle 14 sur No. 14 - 23
+							PBX:(+57) 1 344 3700 Bogotá D.C., Colombia
+							Línea nacional gratuita desde Colombia: 018000115223
+							Atención al usuario: atencionalusuario@unad.edu.co
+							Anticorrupción: anticorrupcion@unad.edu.co
+						</p>
+					</div>
+					<div class="col-md-4" style="padding-left: 20px;text-align: left;color:#fff;font-size: 13px;">
+						<div style="border-left: 1px solid #fff;">
+							<h6 style="padding-left: 20px;font-size: 13px;">Oferta Académica</h6>
+							<div>
+								 <ul style="list-style:none;">
+					                <li><a href="#">Opci&oacute;n 1</a></li>
+					                <li><a href="#">Opci&oacute;n 2</a></li>
+					                <li><a href="#">Opci&oacute;n 3</a></li>
+					                <li><a href="#">Opci&oacute;n 4</a></li>
+					                <li><a href="#">Opci&oacute;n 5</a></li>
+					                <li><a href="#">Opci&oacute;n 5</a></li>
+					                <li><a href="#">Opci&oacute;n 5</a></li>
+					            </ul>
+				            </div>
+			            </div>
+					</div>
+
+					<div class="col-md-4" style="padding-left: 20px;text-align: left;color:#fff;font-size: 13px;">
+						<div style="border-left: 1px solid #fff;">
+							<h6 style="padding-left: 20px;font-size: 13px;">Oferta Académica</h6>
+							<div>
+								 <ul style="list-style:none;">
+					                <li><a href="#">Opci&oacute;n 1</a></li>
+					                <li><a href="#">Opci&oacute;n 2</a></li>
+					                <li><a href="#">Opci&oacute;n 3</a></li>
+					                <li><a href="#">Opci&oacute;n 4</a></li>
+					                <li><a href="#">Opci&oacute;n 5</a></li>
+					                <li><a href="#">Opci&oacute;n 5</a></li>
+					                <li><a href="#">Opci&oacute;n 5</a></li>
+					            </ul>
+				            </div>
+			            </div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col-md-4 footerBloque2">
+
+				<p>Contador de visitas:</p>
+      			<a href="https://www.cerotec.net/estadisticas-112192/aramirezi.github.io" title="ir a gráficas y estadísticas"><img src="https://www.cerotec.net/contador.php?t=4&s=4&i=112192" alt="Contador de visitas y estadísticas"></a> <br /><br />
+
+				 <ul class="social-network social-circle">
+	                <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+	                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+	                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+	                <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+	                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+	            </ul>	
+
+
+			</div>
+		</div>
+		</div>
+
+      </footer>
+
+	  <div class=" bg-dark footerCustom" >
+			<div class="col-md-12" >
+				<p>&copy; Copyright 2017  </p>
+			</div>
+	   </div>
+
+    </main>
+
+	
+	    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/holder.min.js"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			var altura = $('.menu').offset().top;
+			
+			$(window).on('scroll', function(){
+
+				
+				if ( $(window).scrollTop() >= altura ){
+					$('.menu').addClass('menu-fixed');
+				} else {
+					$('.menu').removeClass('menu-fixed');
+				}
+			});
+
+		});
+	</script>
+  </body>
 </html>
