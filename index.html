@@ -20,6 +20,8 @@
     <link href="css/carousel.css" rel="stylesheet">
 
 	<style type="text/css">
+		
+
 		.logoUnad{
 			padding: 20px 20px 20px 20px;
 		}
@@ -231,16 +233,290 @@ a.socialIcon:hover, .socialHoverClass {
     bottom: 30px;
   }
 } 
+
+
+
+
+
+/***
+*
+*/
+
+ .clear{width:100%;clear:both;}
+.contenedor-img {
+    width: auto;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #fff;
+}
+    .contenedor-img .mascara,.contenedor-img .contenido {
+        width: auto;
+        height: 500px;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0
+    }
+    .contenedor-img img {
+        display: block;
+        position: relative;
+       
+    }
+    .contenedor-img h2 {
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        font-size: 17px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.9);
+        margin: 20px 0 0 0
+    }
+    .contenedor-img p {    
+        font-size: 12px;
+        position: relative;
+        color: #fff;
+        padding: 10px 20px 10px;
+        text-align: center
+    }
+    .contenedor-img a.link {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px 14px;
+        background: #222;
+        color: #fff;
+        text-transform: uppercase;
+        box-shadow: 0 0 1px #000
+    }
+        .contenedor-img a.link:hover {
+            box-shadow: 0 0 5px #000
+        }
+/*Ejemplo 1*/
+.ejemplo-1 img { 
+    transition: all 0.2s linear;
+}
+.ejemplo-1 .mascara {
+    opacity: 0;
+    padding-top: 10%;
+    background-color: rgba(46,157,120, 0.7); 
+    transition: all 0.3s ease-in-out;
+}
+    .ejemplo-1 h2 {
+        transform: translateX(-200px);
+        opacity: 0;
+        transition: all 0.7s ease-in-out;
+    }
+    .ejemplo-1 p { 
+        transform: translateX(200px);
+        opacity: 0;
+    	transition: all 0.4s linear;
+    }
+    .ejemplo-1 a.link{
+        opacity: 0;
+    	transition: all 0.4s ease-in-out;
+        transform: translateY(100px)
+    }
+    .ejemplo-1:hover img { 
+    	transform: scale(1.1);
+    } 
+    .ejemplo-1:hover .mascara { 
+    	opacity: 1;
+    }
+    .ejemplo-1:hover h2,
+    .ejemplo-1:hover p,
+    .ejemplo-1:hover a.link {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    .ejemplo-1:hover p {
+        transition-delay: 0.1s;
+    }
+    .ejemplo-1:hover a.link {
+        transition-delay: 0.2s;
+        transform: translateY(0px);
+    }
+    
+    
+/*Ejemplo 2*/
+.ejemplo-2 img { 	
+	transition: all 0.2s ease-in;
+}
+.ejemplo-2 .mascara { 
+	background-color: rgba(25,96,184, 0.8); 
+	width: 500px;
+    padding: 60px;
+	height: 500px;
+	opacity: 1;
+	transform: translate(300px, 200px) rotate(45deg);
+	transition: all 0.5s ease-in-out;
+}
+.ejemplo-2 h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: translate(200px, -200px);
+	transition: all 0.3s ease-in-out;
+}
+.ejemplo-2 p { 
+	transform: translate(-200px, 200px);
+	transition: all 0.4s ease-in-out;
+}
+.ejemplo-2 a.link { 
+    transform: translate(0px, 100px);
+	transition: all 0.3s 0.1s ease-in-out;
+} 
+
+.ejemplo-2:hover .mascara { 
+	opacity:1; 
+	transform: translate(-100px, -120px) rotate(45deg);
+}							  
+.ejemplo-2:hover h2 { 
+	transform: translate(0px,0px);
+	transition-delay: 0.3s; 
+}
+.ejemplo-2:hover p { 
+    transform: translate(0px,0px); 
+	transition-delay: 0.4s;
+}
+.ejemplo-2:hover a.link { 
+	transform: translate(0px,0px); 
+	transition-delay: 0.5s;
+}
+
+
+/*Ejemplo 3*/
+.ejemplo-3 img {
+	transition: all 0.4s ease-in-out; 
+}
+.ejemplo-3 .mascara { 
+	background-color: rgba(128,96,0,0.5);
+	transform: translateX(-500px);
+	opacity: 1;
+	transition: all 0.4s ease-in-out; 
+}
+.ejemplo-3 h2{
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+    box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+}
+.ejemplo-3 p{
+    color: #333;   
+}
+.ejemplo-3:hover .mascara { 
+	transform: translateX(0px);
+}						
+.ejemplo-3:hover img { 
+	transform: translateX(500px);	
+}
+
+
+
+/*Ejemplo 4*/
+.ejemplo-4 img { 
+	transition: all 0.4s ease-in-out 0.2s;
+    opacity: 1;    
+}
+.ejemplo-4 .mascara { 
+	background-color: rgba(0,0,0,0.8);
+	opacity: 0;
+	transform: scale(0) rotate(-180deg);
+	transition: all 0.4s ease-in;
+    border-radius: 0px;
+}
+.ejemplo-4 h2{
+    opacity: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+	transition: all 0.5s ease-in-out;
+}
+.ejemplo-4 p { 
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+.ejemplo-4 a.link { 
+    opacity: 0;
+	transition: all 0.5s ease-in-out;
+} 
+
+.ejemplo-4:hover .mascara { 
+	opacity: 1; 
+	transform: scale(1) rotate(0deg);
+	transition-delay: 0.2s;
+}								  
+.ejemplo-4:hover img 	  { 
+	transform: scale(0); 
+    opacity: 0;
+	transition-delay: 0s;
+}						
+.ejemplo-4:hover h2,
+.ejemplo-4:hover p,
+.ejemplo-4:hover a.link{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+/*Ejemplo 5*/
+.ejemplo-5 img { 
+	transform: scaleY(1);
+	transition: all 0.7s ease-in-out;
+    
+}
+.ejemplo-5 .mascara { 
+    background-color: rgba(119, 80, 21, 0.9); 
+    transition: all 0.5s linear;
+    opacity: 0;
+}	
+.ejemplo-5 h2{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: scale(0);
+    color: #fff;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+.ejemplo-5 p {
+    color: #fff;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+.ejemplo-5 a.link { 
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+    background-color: rgba(119, 80, 21, 0.9);
+}
+
+.ejemplo-5:hover img { 
+	transform: scale(10);
+    opacity: 0;
+}
+.ejemplo-5:hover .mascara { 
+	opacity: 1;
+}																			 
+.ejemplo-5:hover h2,
+.ejemplo-5:hover p,
+.ejemplo-5:hover a.link{ 
+    transform: scale(1);
+    opacity: 1;
+}
+
 	</style>
   </head>
   <body>
 
     <header>
 
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-white  menu-fixed">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-white  menu-fixed" style="background-color: #E8E8E8 !important;">
 
       	<a href="index.html"><img class="logoUnad" src="img/logoUNAD.png" width="355px"></a>
-        <a class="navbar-brand" href="#">Carousel</a>
+        
         <button class="navbar-toggler bg-dark " type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -279,7 +555,7 @@ a.socialIcon:hover, .socialHoverClass {
 
 
 
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" >
      
       </div>
       <br><br>
@@ -289,22 +565,26 @@ a.socialIcon:hover, .socialHoverClass {
       ================================================== -->
       <!-- Wrap the rest of the page in another container to center all the content. -->
 
-      <div class="container marketing">
-
-   
+      <div class="container marketing" >
 
 
-        <!-- START THE FEATURETTES -->
+        <!-- START THE FEATURETTES 
 
-        <hr class="featurette-divider">
+        <hr class="featurette-divider">-->
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <h2 class="featurette-heading">Introducci&oacute;n <span class="text-muted">I</span></h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto contenedor-img ejemplo-1" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <div class="col-md-5 contenedor-img ejemplo-1">
+            <img class="featurette-image img-fluid mx-auto" src="img/Imagen-curso-diseño.jpg"  width="500" height="500" data-srce="holder.js/500x500/auto" alt="Generic placeholder image">
+
+              <div class="mascara">  
+		         <h2>Introducci&oacute;n</h2>  
+		         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada.</p>
+		         <a href="#" class="link">Leer mas</a>  
+		     </div> 
           </div>
         </div>
 
@@ -312,12 +592,26 @@ a.socialIcon:hover, .socialHoverClass {
 
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <h2 class="featurette-heading">-Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
-          <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-          </div>
+
+
+          	<div class="col-md-5 order-md-1 contenedor-img ejemplo-1">
+	            <img class="featurette-image img-fluid mx-auto" src="img/accounting-firm-ajax.jpg"  width="500" height="500" data-srce="holder.js/500x500/auto" alt="Generic placeholder image">
+
+	              <div class="mascara">  
+			         <h2>Introducci&oacute;n</h2>  
+			         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada.</p>
+			         <a href="#" class="link">Leer mas</a>  
+			     </div> 
+           </div>
+
+		
+
+
+
+
         </div>
 		
 		 <hr class="featurette-divider">
@@ -328,7 +622,7 @@ a.socialIcon:hover, .socialHoverClass {
           <div class="col-lg-4">
             <i class="fa fa-git fa-5 rounded-circle" style="width: 140px !important;height:140px !important;background: #4C4C4E;font-size: 70px;vertical-align: middle !important;padding-top: 10%;color:#fff !important;"></i>
             <h2>GIT</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p>En esta sesión podras encontrar todo lo necesario para que inicies en el mundo de GIT.</p>
             <p><a class="btn btn-secondary" href="#" role="button">Ver M&aacute;s &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
       
@@ -351,21 +645,20 @@ a.socialIcon:hover, .socialHoverClass {
 
         
 
-        <hr class="featurette-divider">
+        <!--<hr class="featurette-divider">-->
 
-        <div class="row featurette">
-          <div class="col-md-7">
+        <div class="row featurette container-expand-md " style="background-color: #e6ecf0;">
+          <div class="col-md-8" style="padding: 0px 60px 60px 60px !important;">
 			
-            <h2 class="featurette-heading"><i class="fa fa-twitter" style="font-size:180px;color:#1c94e0;"></i>Twitter <span class="text-muted">Universidad Abierta y a Distancia.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading"><i class="fa fa-twitter" style="font-size:180px;color:#1c94e0;"></i>Twitter <span class="text-muted">Universidad Nacional Abierta y a Distancia.</span></h2>
+
+            <p class="lead">Los invitamos a que nos sigas y estes enterado de las &uacute;ltimas noticias y eventos que te ofrece la unividasidad. No te pierdas de estas grandes oportunidades...</p>
           </div>
-          <div class="col-md-5">
+
+          <div class="col-md-4" style="padding: 60px;text-align: center;">
           	    <aside class="twitter">
-  <a class="twitter-timeline" data-lang="es" data-width="300px" data-height="580px" data-link-color="#005883" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </aside>
-
-
-           
+				  <a class="twitter-timeline" data-lang="es" data-width="300px" data-height="580px" data-link-color="#005883" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</aside>   
           </div>
         </div>
 
@@ -374,9 +667,9 @@ a.socialIcon:hover, .socialHoverClass {
 
 
 
-        <hr class="featurette-divider">
+        <!-- <hr class="featurette-divider">
 
-        <!-- /END THE FEATURETTES -->
+        /END THE FEATURETTES -->
 
 
 
