@@ -62,8 +62,32 @@
 }
 
 .navbar-nav a {
-	color:red !important;
+	color: #61696f !important;
+	
 }
+
+.navbar-nav li {
+	padding : 0 20px;
+}
+
+.menu-blue:hover {
+	border-top: 1px solid #000;
+	border-bottom: 2px solid blue !important;
+
+}
+
+.menu-green:hover {
+	border-top: 1px solid #000;
+	border-bottom: 2px solid green !important;
+
+}
+
+.menu-red:hover {
+	border-top: 1px solid #000;
+	border-bottom: 2px solid red !important;
+
+}
+
 
 
 /*=========================
@@ -142,14 +166,78 @@ a.socialIcon:hover, .socialHoverClass {
  background-color: #D3D3D3;   
 }
 
-    
+
+/*
+ *
+ */
+
+
+
+@media only screen and (min-width: 1024px) {
+  main p {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(232, 98, 86, 0.8) url(img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+} 
 	</style>
   </head>
   <body>
 
     <header>
 
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-white menu menu-fixed">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-white  menu-fixed">
 
       	<a href="index.html"><img class="logoUnad" src="img/logoUNAD.png" width="355px"></a>
         <a class="navbar-brand" href="#">Carousel</a>
@@ -157,24 +245,35 @@ a.socialIcon:hover, .socialHoverClass {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
+		
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item active menu-blue">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item menu-green">
               <a class="nav-link" href="#">Link</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
+            <li class="nav-item dropdown menu-red">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Dropdown
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="#">Action</a>
+				  <a class="dropdown-item" href="#">Another action</a>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item" href="#">Something else here</a>
+				</div>
+			</li>
           </ul>
 
         </div>
+		
+
       </nav>
        
     </header>
 
-    <main role="main">
+    <main class="cd-container" role="main">
 		
 
 
@@ -256,7 +355,8 @@ a.socialIcon:hover, .socialHoverClass {
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+			
+            <h2 class="featurette-heading"><i class="fa fa-twitter" style="font-size:180px;color:#1c94e0;"></i>Twitter <span class="text-muted">Universidad Abierta y a Distancia.</span></h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5">
@@ -366,14 +466,16 @@ a.socialIcon:hover, .socialHoverClass {
 				<p>&copy; Copyright 2017  </p>
 			</div>
 	   </div>
+	  
 
     </main>
-
+ <a href="#0" class="cd-top">Top</a>
 	
 	    <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
@@ -381,21 +483,41 @@ a.socialIcon:hover, .socialHoverClass {
 
 
 	<script type="text/javascript">
-		$(document).ready(function(){
 
-			var altura = $('.menu').offset().top;
-			
-			$(window).on('scroll', function(){
+		
+		
+		
+		
+		
+		
+    $(document).ready(function($){
+		// browser window scroll (in pixels) after which the "back to top" link is shown
+		var offset = 300,
+		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+		offset_opacity = 1200,
+		//duration of the top scrolling animation (in ms)
+		scroll_top_duration = 700,
+		//grab the "back to top" link
+		$back_to_top = $('.cd-top');
 
-				
-				if ( $(window).scrollTop() >= altura ){
-					$('.menu').addClass('menu-fixed');
-				} else {
-					$('.menu').removeClass('menu-fixed');
-				}
-			});
-
+		//hide or show the "back to top" link
+		$(window).scroll(function(){
+			( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+			if( $(this).scrollTop() > offset_opacity ) { 
+				$back_to_top.addClass('cd-fade-out');
+			}
 		});
+
+		//smooth scroll to top
+		$back_to_top.on('click', function(event){
+			event.preventDefault();
+			$('body,html').animate({
+				scrollTop: 0 ,
+				}, scroll_top_duration
+			);
+		});
+
+	});
 	</script>
   </body>
 </html>
