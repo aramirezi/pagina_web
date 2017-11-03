@@ -1,0 +1,485 @@
+
+    .logoUnad{
+      padding: 20px 20px 20px 20px;
+    }
+
+
+    .menu-fixed {
+
+      z-index:1000;
+
+      /*left:0;*/
+      /*Podemos hacer que el menu abarque el 100% al hacer scroll*/
+      box-shadow:0px 4px 3px rgba(0,0,0,.5);
+    }
+
+    footer{
+      background: #000;
+      height: auto;
+      text-align: center;
+      color: #fff;
+    }
+
+    #navbarCollapse ul i a{
+      font-color:red;
+    }
+
+.col-center{
+    float: none;
+    margin: 0 auto;
+}
+
+.footerCustom{
+  text-align: center;
+  color: #fff;
+  padding:2px;
+}
+
+.footerBloque2{
+  padding: 20px 20px 20px 20px;
+  color: #fff;
+}
+
+.navbar-nav a {
+  color: #61696f !important;
+  
+}
+
+.navbar-nav li {
+  padding : 0 20px;
+}
+
+.menu-blue:hover {
+  border-top: 1px solid #000;
+  border-bottom: 2px solid blue !important;
+
+}
+
+.menu-green:hover {
+  border-top: 1px solid #000;
+  border-bottom: 2px solid green !important;
+
+}
+
+.menu-red:hover {
+  border-top: 1px solid #000;
+  border-bottom: 2px solid red !important;
+
+}
+
+
+
+/*=========================
+  Icons
+ ================= */
+
+/* footer social icons */
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left:0 !important;
+  padding: 0;
+}
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+  background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+  background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+  background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+  background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+  background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+  background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+  color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+  color:#44BCDD;
+}
+
+.social-circle li a {
+  display:inline-block;
+  position:relative;
+  margin:0 auto 0 auto;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  text-align:center;
+  width: 50px;
+  height: 50px;
+  font-size:20px;
+}
+.social-circle li i {
+  margin:0;
+  line-height:50px;
+  text-align: center;
+}
+
+
+.social-circle i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-circle a {
+ background-color: #D3D3D3;   
+}
+
+
+/*
+ *
+ */
+
+
+
+@media only screen and (min-width: 1024px) {
+  main p {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(232, 98, 86, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+} 
+
+
+
+
+
+/***
+*
+*/
+
+ .clear{width:100%;clear:both;}
+.contenedor-img {
+    width: auto;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #fff;
+}
+    .contenedor-img .mascara,.contenedor-img .contenido {
+        width: auto;
+        height: 500px;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0
+    }
+    .contenedor-img img {
+        display: block;
+        position: relative;
+       
+    }
+    .contenedor-img h2 {
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        font-size: 17px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.9);
+        margin: 20px 0 0 0
+    }
+    .contenedor-img p {    
+        font-size: 12px;
+        position: relative;
+        color: #fff;
+        padding: 10px 20px 10px;
+        text-align: center
+    }
+    .contenedor-img a.link {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px 14px;
+        background: #222;
+        color: #fff;
+        text-transform: uppercase;
+        box-shadow: 0 0 1px #000
+    }
+        .contenedor-img a.link:hover {
+            box-shadow: 0 0 5px #000
+        }
+/*Ejemplo 1*/
+.ejemplo-1 img { 
+    transition: all 0.2s linear;
+}
+.ejemplo-1 .mascara {
+    opacity: 0;
+    padding-top: 10%;
+    background-color: rgba(46,157,120, 0.7); 
+    transition: all 0.3s ease-in-out;
+}
+    .ejemplo-1 h2 {
+        transform: translateX(-200px);
+        opacity: 0;
+        transition: all 0.7s ease-in-out;
+    }
+    .ejemplo-1 p { 
+        transform: translateX(200px);
+        opacity: 0;
+      transition: all 0.4s linear;
+    }
+    .ejemplo-1 a.link{
+        opacity: 0;
+      transition: all 0.4s ease-in-out;
+        transform: translateY(100px)
+    }
+    .ejemplo-1:hover img { 
+      transform: scale(1.1);
+    } 
+    .ejemplo-1:hover .mascara { 
+      opacity: 1;
+    }
+    .ejemplo-1:hover h2,
+    .ejemplo-1:hover p,
+    .ejemplo-1:hover a.link {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    .ejemplo-1:hover p {
+        transition-delay: 0.1s;
+    }
+    .ejemplo-1:hover a.link {
+        transition-delay: 0.2s;
+        transform: translateY(0px);
+    }
+    
+    
+/*Ejemplo 2*/
+.ejemplo-2 img {  
+  transition: all 0.2s ease-in;
+}
+.ejemplo-2 .mascara { 
+  background-color: rgba(25,96,184, 0.8); 
+  width: 500px;
+    padding: 60px;
+  height: 500px;
+  opacity: 1;
+  transform: translate(300px, 200px) rotate(45deg);
+  transition: all 0.5s ease-in-out;
+}
+.ejemplo-2 h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: translate(200px, -200px);
+  transition: all 0.3s ease-in-out;
+}
+.ejemplo-2 p { 
+  transform: translate(-200px, 200px);
+  transition: all 0.4s ease-in-out;
+}
+.ejemplo-2 a.link { 
+    transform: translate(0px, 100px);
+  transition: all 0.3s 0.1s ease-in-out;
+} 
+
+.ejemplo-2:hover .mascara { 
+  opacity:1; 
+  transform: translate(-100px, -120px) rotate(45deg);
+}               
+.ejemplo-2:hover h2 { 
+  transform: translate(0px,0px);
+  transition-delay: 0.3s; 
+}
+.ejemplo-2:hover p { 
+    transform: translate(0px,0px); 
+  transition-delay: 0.4s;
+}
+.ejemplo-2:hover a.link { 
+  transform: translate(0px,0px); 
+  transition-delay: 0.5s;
+}
+
+
+/*Ejemplo 3*/
+.ejemplo-3 img {
+  transition: all 0.4s ease-in-out; 
+}
+.ejemplo-3 .mascara { 
+  background-color: rgba(128,96,0,0.5);
+  transform: translateX(-500px);
+  opacity: 1;
+  transition: all 0.4s ease-in-out; 
+}
+.ejemplo-3 h2{
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+    box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+}
+.ejemplo-3 p{
+    color: #333;   
+}
+.ejemplo-3:hover .mascara { 
+  transform: translateX(0px);
+}           
+.ejemplo-3:hover img { 
+  transform: translateX(500px); 
+}
+
+
+
+/*Ejemplo 4*/
+.ejemplo-4 img { 
+  transition: all 0.4s ease-in-out 0.2s;
+    opacity: 1;    
+}
+.ejemplo-4 .mascara { 
+  background-color: rgba(0,0,0,0.8);
+  opacity: 0;
+  transform: scale(0) rotate(-180deg);
+  transition: all 0.4s ease-in;
+    border-radius: 0px;
+}
+.ejemplo-4 h2{
+    opacity: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+  transition: all 0.5s ease-in-out;
+}
+.ejemplo-4 p { 
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.ejemplo-4 a.link { 
+    opacity: 0;
+  transition: all 0.5s ease-in-out;
+} 
+
+.ejemplo-4:hover .mascara { 
+  opacity: 1; 
+  transform: scale(1) rotate(0deg);
+  transition-delay: 0.2s;
+}                 
+.ejemplo-4:hover img    { 
+  transform: scale(0); 
+    opacity: 0;
+  transition-delay: 0s;
+}           
+.ejemplo-4:hover h2,
+.ejemplo-4:hover p,
+.ejemplo-4:hover a.link{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+/*Ejemplo 5*/
+.ejemplo-5 img { 
+  transform: scaleY(1);
+  transition: all 0.7s ease-in-out;
+    
+}
+.ejemplo-5 .mascara { 
+    background-color: rgba(119, 80, 21, 0.9); 
+    transition: all 0.5s linear;
+    opacity: 0;
+} 
+.ejemplo-5 h2{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: scale(0);
+    color: #fff;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+.ejemplo-5 p {
+    color: #fff;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+.ejemplo-5 a.link { 
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+    background-color: rgba(119, 80, 21, 0.9);
+}
+
+.ejemplo-5:hover img { 
+  transform: scale(10);
+    opacity: 0;
+}
+.ejemplo-5:hover .mascara { 
+  opacity: 1;
+}                                      
+.ejemplo-5:hover h2,
+.ejemplo-5:hover p,
+.ejemplo-5:hover a.link{ 
+    transform: scale(1);
+    opacity: 1;
+}
