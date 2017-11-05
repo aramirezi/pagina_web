@@ -628,3 +628,60 @@ pre[class*="language-"] {
 .token.entity {
   cursor: help;
 }
+
+
+
+/**
+*
+*/
+
+ 
+  .nav.nav-tabs {
+    float: left;
+    display: block;
+    margin-right: 20px;
+    border-bottom:0;
+    border-right: 1px solid #ddd;
+    padding-right: 15px;
+
+}
+
+  .nav.nav-tabs  li {
+    
+    border-bottom:  1px solid #ddd;
+    padding: 10px;
+   
+}
+
+.nav.nav-tabs .activado{
+  background-color: #007bff;
+}
+
+.activado a{
+   color: #fff !important;
+}
+
+
+
+
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
