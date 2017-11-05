@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="img/favicon.ico">
 
-    <title>GIT</title>
+    <title>CSS 3</title>
   
 	<!-- Font Awesome core CSS -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -46,7 +46,10 @@
             <li class="nav-item menu-green">
               <a class="nav-link" href="css3.html">CSS 3</a>
             </li>
-            <li class="nav-item dropdown menu-red">
+            <li class="nav-item menu-green">
+              <a class="nav-link" href="autores.html">AUTOR</a>
+            </li>
+            <li class="nav-item dropdown menu-red" style="display:none">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown
         </a>
@@ -69,8 +72,8 @@
  <br><br><br> 
  <div class="row">
     <div class="col-md-12" style="text-align: center;background-color: #e6ecf0;padding: 50px 0px 20px 0px;">
-        <img  class="text-center" src="img/git_logo.png" width="200"><br>
-        <h1 class="text-center featurette-heading" style="display: inline;font-size: 100px; ">GIT</h1>
+        <img  class="text-center" src="img/css3_logo.png" width="200"><br>
+        <h1 class="text-center featurette-heading" style="display: inline;font-size: 100px; "></h1>
     </div>
     </div>
 
@@ -83,7 +86,7 @@
       <!-- Wrap the rest of the page in another container to center all the content. -->
 
       <div class="container marketing" >
-		   <div class="container">
+		   <div class="container" style="text-align: justify;">
 			  <div class="row">
 
 			    <div class="col-md-12">
@@ -95,9 +98,8 @@
 			        <div class="col-md-3">
 
 			        <ul class="nav nav-tabs">
-			          <li class="active activado"><a href="#a" data-toggle="tab">Instalación GIT</a></li>
-			          <li><a href="#b"  data-toggle="tab" >Configuración GITHUB</a></li>
-			          <li><a href="#c" data-toggle="tab">GITHUB Pages</a></li>
+			          <li class="active activado"><a href="#a" data-toggle="tab">Introducción</a></li>
+			          <li><a href="#b"  data-toggle="tab" >Contenido</a></li>
 			          <li><a href="#d" data-toggle="tab">Actividad</a></li>
 			        </ul>
 			        </div>
@@ -106,55 +108,46 @@
 			        <div class="tab-content">
 			         <div class="tab-pane active" id="a">
 
-			              <h3 style="color: #f14e32;">Instalación de Git</h3>
+			              <h3 style="color: #f14e32;">¿ Qué es CSS ?</h3>
 			              <br />
 
-			              <p>Antes de empezar a utilizar Git, tienes que instalarlo en tu computadora. Incluso si ya está instalado, este es posiblemente un buen momento para actualizarlo a su última versión. Puedes instalarlo como un paquete, a partir de un archivo instalador, o bajando el código fuente y compilándolo tú mismo.</p>
-
-			              <p>
-			                Git es un sistema multiplataforma, para realizar el proceso de descarga selecciona el sistema operativo con el  que cuentas.
-			              </p>
-			              <p>
-			                  <a target="__blanck" href="https://git-scm.com/download/mac"><i class="fa fa-apple"    style="font-size: 50px;padding-right: 20px;color:#ABB3B4;" aria-hidden="true"></i><span style="padding: 10px;">Mac</span></a><br><br>
-
-			                  <a target="__blanck" href="https://git-scm.com/download/linux"> <i class="fa fa-linux"    style="font-size: 50px;padding-right: 20px;color:#000;" aria-hidden="true"></i><span style="padding: 10px;">Linux</span></a><br><br>
-
-			                  <a target="__blanck" href="https://git-scm.com/download/win"><i class="fa fa-windows"  style="font-size: 50px;padding-right: 20px;" aria-hidden="true"></i><span style="padding: 10px;">Windows</span></a><br><br>
-			              </p>
-
-			              <h3 style="color: #f14e32;">Configurando Git por primera vez</h3>
+			              <p>Si no sabes lo que es CSS probablemente te interesaría comenzar leyendo nuestro manual de CSS o la sección de CSS a fondo. No obstante, cabría decir que CSS es un lenguaje para definir el estilo o la apariencia de las páginas web, escritas con HTML o de los documentos XML. CSS se creó para separar el contenido de la forma, a la vez que permite a los diseñadores mantener un control mucho más preciso sobre la apariencia de las páginas.</p>
+							
+						  <h5 style="color: #f14e32;">Con CSS 3, más control sobre la forma</h5>
 			              <br />
-			              <p>
-			                Ahora que tienes Git en tu sistema, querrás hacer algunas cosas para personalizar tu entorno de Git. Sólo es necesario hacer estas cosas una vez; se mantendrán entre actualizaciones. También puedes cambiarlas en cualquier momento volviendo a ejecutar los comandos correspondientes.
-			              </p>
+						  <p>
+						  	El objetivo inicial de CSS, separar el contenido de la forma, se cumplió ya con las primeras especificaciones del lenguaje. Sin embargo, el objetivo de ofrecer un control total a los diseñadores sobre los elementos de la página ha sido más difícil de cubrir. Las especificaciones anteriores del lenguaje tenían muchas utilidades para aplicar estilos a las webs, pero los desarrolladores aun continúan usando trucos diversos para conseguir efectos tan comunes o tan deseados como los bordes redondeados o el sombreado de elementos en la página.	
+						  </p>
 
-			              <pre class=" language-php"><code class=" language-php">
-			                <span class="token comment" spellcheck="true">// Definimos el nombre de usuario</span>
-			                <span class="token php"><span class="token delimiter"> $ git config --global user.name "John Doe"</span> 
-			                <span class="token comment" spellcheck="true">// Definimos el emial del usuairo</span>
-			                <span class="token php"><span class="token delimiter"> $ git config --global user.email johndoe@example.com</span> 
-			              </code>
-			              </pre>
-			              
+						  <p>
+						  	CSS 1 ya significó un avance considerable a la hora de diseñar páginas web, aportando mucho mayor control de los elementos de la página. Pero como todavía quedaron muchas otras cosas que los diseñadores deseaban hacer, pero que CSS no permitía especificar, éstos debían hacer uso de trucos para el diseño. Lo peor de esos trucos es que muchas veces implica alterar el contenido de la página para incorporar nuevas etiquetas HTML que permitan aplicar estilos de una manera más elaborada. Dada la necesidad de cambiar el contenido, para alterar al diseño y hacer cosas que CSS no permitía, se estaba dando al traste con alguno de los objetivos para los que CSS fue creado, que era el separar por completo el contenido de la forma.
+						  </p>
+
+						  <p>
+						  	CSS 2 incorporó algunas novedades interesantes, que hoy ya utilizamos habitualmente, pero CSS 3 todavía avanza un poco más en la dirección, de aportar más control sobre los elementos de la página.
+						  </p>
+
+						  <p>
+						  	Así pues, la novedad más importante que aporta CSS 3, de cara a los desarrolladores de webs, consiste en la incorporación de nuevos mecanismos para mantener un mayor control sobre el estilo con el que se muestran los elementos de las páginas, sin tener que recurrir a trucos o hacks, que a menudo complicaban el código de las web.
+						  </p>
+
 			         </div>
 
 
 
 			         <div class="tab-pane" id="b">
 			              
-			              <h3 style="color: #f14e32;">Intalar y configurar el cliente GITHUB</h3>
+			              <h3 style="color: #f14e32;">Todo sobre CSS</h3>
 			              <br />
-			              <div style="text-align: center;"><img  class="text-center" src="img/github-logo.png" width="200"> <h3>GITHUB</h3></div><br>
-			            
-			              <br />
+			           
 			              <p>
-			                Para aprender como descargar y configurar el cliente github de escritorio da clic sobre el siguiente botón.
+			                Para aprender como utilizar CSS 3 observa el siguiente vídeo.
 			              </p>
 
 			              <div class="container">
 			                
 			                 <!-- Button trigger modal -->
-			                <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/7ftwZ-MzxEQ?rel=0&showinfo=0" data-target="#myModal">
+			                <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/OQ11aN67VWQ?rel=0&showinfo=0" data-target="#myModal">
 			                  Ver vídeo
 			                </button>
 			                  
@@ -189,76 +182,7 @@
 
 
 			         <div class="tab-pane" id="c">
-			            <h3 style="color: #f14e32;">GITHUB Pages</h3>
-			            <br />
-
-			            <p>
-			            Se puedes almacenar cualquier código que quieras en un repositorio de Github, pero para usar la característica páginas de Github con pleno efecto, el código debe estar estructurado como un sitio web típico, por ejemplo que el punto de entrada primario sea un archivo HTML llamado index.html.
-			            </p>
-
-			            <p>
-			              La otra cosa que necesitas hacer antes de seguir adelante es inicializar el directorio de código como un repositorio Git. para hacer esto:
-			            </p>
-
-			            <p>
-			              Apunta la línea de comandos a tu directorio test-site (o como se llame el directorio que contiene tu sitio web). Para esto, usa el comando cd (Es decir "cambio de directorio"). Esto es lo que deberías digitar si has puesto tu sitio web en un directorio llamado test-site en tu escritorio:
-			            </p>
-
-			            <pre class=" language-php"><code class=" language-php">
-			              <span class="token php"><span class="token delimiter"> $ cd Desktop/test-site</span> 
-			            </code>
-			            </pre>
-
-			            <p>
-			              Cuando la línea comandos está apuntando hacia el interior del directorio de tu sitio web, digita el siguiente comando, que le dice a la herramienta git para convertir el directorio en un repositorio git:
-			            </p>
-
-			            <pre class=" language-php"><code class=" language-php">
-			              <span class="token php"><span class="token delimiter"> $ git init</span> 
-			            </code>
-			            </pre>
-			            
-			            <p>
-			              A continuación, tu necesitas crear un nuevo repositorio para colocar tus archivos en el. Has clic en el signo más (+) en la parte superior derecha de la página de inicio de GitHub, luego escoge Nuevo Repositorio.
-			            </p>
-			            <p>
-			              En esta página, en la caja Nombre del Repositorio, digita el nombre para tu repositorio de código, por ejemplo my-repository.
-			            </p>
-
-			            <h4 style="color: #f14e32;">Subiendo tus archivos a GitHub</h4>
-			            <br />
-
-			            <p>
-			              En la página actual, tú estás interesado en la sección …o empujar un repositorio existente desde la línea de comandos. Tú deberias ver dos lineas de código listado en esta sección. Copia la totalidad de la primera línea, pégala en la línea de comandos, presiona la tecla Enter. El comando debería mostrarte algo como esto:
-			            </p>
-
-			            <pre class=" language-php"><code class=" language-php">
-			              <span class="token php"><span class="token delimiter"> $ git remote add origin https://github.com/chrisdavidmills/my-repository.git</span> 
-			            </code>
-			            </pre>
-
-			            <p>
-			              A continuación, digita los siguientes dos comandos, presionando Enter despues de cada uno. Estos preparán el código para subirlo a GitHub, y pida a GIt que administre estos archivos.
-			            </p>
-			            
-			             <pre class=" language-php"><code class=" language-php">
-			              <span class="token php"><span class="token delimiter"> $ git add --all</span> 
-			              <span class="token php"><span class="token delimiter"> $ git commit -m 'adding my files to my repository</span> 
-			            </code>
-			            </pre>
-
-			            <p>
-			              Por último, empuja el código hasta GitHub yendo a la página de GitHub en la que estas e ingresando en la terminal el segundo de los dos comandos que vimos …o empuje un repositorio existente desde la sección de línea de comandos:
-			            </p>
-
-			             <pre class=" language-php"><code class=" language-php">
-			              <span class="token php"><span class="token delimiter"> $ git push -u origin master</span> 
-			            </code>
-			            </pre>
-
-			            <p>
-			              Ahora necesitas crear la rama gh-pages de tu repositorio; actualiza la página actual y verá una página del repositorio algo así como la de abajo. Tú necesitas presionar el boton que dice Branch: master, digita gh-pages en el campo de texto, luego presiona el boton azul que dice Create branch: gh-pages. Esto crea una rama de código especial llamada gh-pages que es publicada en una ubicación especial. La URL toma la forma username.github.io/my-repository-name, asi en mi caso de ejemplo, la URL debería ser https://aramirezi.github.io/pagina_web/. La página mostrada es la página index.html.
-			            </p>
+			          
 
 			         </div>
 
@@ -269,155 +193,143 @@
 			            <ul class="list-group">
 			              <li class="list-group-item active">Cuestionario</li>
 			              <li class="list-group-item">
-			                <h5>1. ¿Qué comando es necesario para crear un repositorio?</h5>
+			                <h5>1. CSS controla el aspecto gáfico de una página web mediante ___________ indicando al navegador como se deben visualizar los elementos de un documento HTML</h5>
 
 			                <div class="custom-controls-stacked">
 			                  <label class="custom-control custom-radio">
 			                    <input id="opcion1" name="pregunta1" type="radio" value="1" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git status</span>
+			                    <span class="custom-control-description">Las hojas de estilo</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="opcion2" name="pregunta1" type="radio" value="2" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git add</span>
+			                    <span class="custom-control-description">El código HTML</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="opcion3" name="pregunta1" type="radio" value="3" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git init</span>
+			                    <span class="custom-control-description">Un programa PHP</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="opcion4" name="pregunta1" type="radio" value="4" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git config</span>
+			                    <span class="custom-control-description">Una página dinámica</span>
 			                  </label>
 
 			                </div>
 			              </li>
 
 			              <li class="list-group-item">
-			                <h5>2. Si deseas obtener una copia de un repositorio Git existente en GitHub, el comando que necesitas es:</h5>
+			                <h5>2. Los navegadores ( Firefox, Chrome, Safari, etc) establecen valores CSS por defecto a las etiquetas HTML.</h5>
 
 			                <div class="custom-controls-stacked">
 			                  <label class="custom-control custom-radio">
 			                    <input id="p2opcion1" name="pregunta2" type="radio" value="1" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git commit</span>
+			                    <span class="custom-control-description">Verdadero</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p2opcion2" name="pregunta2" type="radio" value="2" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git add</span>
-			                  </label>
-
-			                  <label class="custom-control custom-radio">
-			                    <input id="p2opcion3" name="pregunta2" type="radio" value="3" class="custom-control-input">
-			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git log</span>
-			                  </label>
-
-			                  <label class="custom-control custom-radio">
-			                    <input id="p2opcion4" name="pregunta2" type="radio" value="4" class="custom-control-input">
-			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git clone</span>
+			                    <span class="custom-control-description">Falso</span>
 			                  </label>
 
 			                </div>
 			              </li>
 
 			              <li class="list-group-item">
-			                 <h5>3. ¿Cuál es el comando utilizado para listar los cambios (commits) que han producido en el repositorio?</h5>
+			                 <h5>3. La etiqueta &lt;style&gt; se escribe:</h5>
 
 			                <div class="custom-controls-stacked">
 			                  <label class="custom-control custom-radio">
 			                    <input id="p3opcion1" name="pregunta3" type="radio" value="1" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git init</span>
+			                    <span class="custom-control-description">Antes del &lt;head&gt;</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p3opcion2" name="pregunta3" type="radio" value="2" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git status</span>
+			                    <span class="custom-control-description">Dentro del &lt;head&gt;</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p3opcion3" name="pregunta3" type="radio" value="3" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git tag</span>
+			                    <span class="custom-control-description">Dentro del &lt;body&gt;</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p3opcion4" name="pregunta3" type="radio" value="4" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git log</span>
+			                    <span class="custom-control-description">En la primera linea de nuestro documento</span>
 			                  </label>
 
 			                </div>
 			              </li>
 
 			              <li class="list-group-item">
-			                <h5>4. Lista todas las ramas (branches) disponibles localmente.</h5>
+			                <h5>4. Para mantener el CSS separado del HTML ( es decir en otro archivo), se utiliza el elemento________ en la cabecera.</h5>
 
 			                <div class="custom-controls-stacked">
 			                  <label class="custom-control custom-radio">
 			                    <input id="p4opcion1" name="pregunta4" type="radio" value="1" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git branch</span>
+			                    <span class="custom-control-description">&lt;cite&gt;</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p4opcion2" name="pregunta4" type="radio" value="2" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git status</span>
+			                    <span class="custom-control-description">&lt;file&gt;</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p4opcion3" name="pregunta4" type="radio" value="3" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git log</span>
+			                    <span class="custom-control-description">&lt;link&gt;</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p34pcion4" name="pregunta4" type="radio" value="4" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git branch -r</span>
+			                    <span class="custom-control-description">&lt;style&gt;</span>
 			                  </label>
 
 			                </div>
 			              </li>
 
 			              <li class="list-group-item">
-			                <h5>5. ¿Cuál de los siguientes comandos crea una nueva rama local llamada develop?</h5>
+			                <h5>5. Determina sobre que elementos HTML aplica el estilo</h5>
 
 			                <div class="custom-controls-stacked">
 			                  <label class="custom-control custom-radio">
 			                    <input id="p5opcion1" name="pregunta5" type="radio" value="1" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git add develop</span>
+			                    <span class="custom-control-description">Propiedad</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p5opcion2" name="pregunta5" type="radio" value="2" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git checkout -b develop</span>
+			                    <span class="custom-control-description">Valor</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p5opcion3" name="pregunta5" type="radio" value="3" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git checkout -- develop</span>
+			                    <span class="custom-control-description">Declaración</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p5opcion4" name="pregunta5" type="radio" value="4" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">ggit checkout develop</span>
+			                    <span class="custom-control-description">Selector</span>
 			                  </label>
 
 			                </div>
@@ -619,23 +531,23 @@
 			$(".alert-danger").css('display','none');
 
 
-			if(pregunta1 == 3){
+			if(pregunta1 == 1){
 				resultado = (resultado + 1);
 			}
 
-			if(pregunta2 == 4){
+			if(pregunta2 == 1){
 				resultado = (resultado + 1);
 			}
 
-			if(pregunta3 == 4){
+			if(pregunta3 == 2){
 				resultado = (resultado +1);
 			}
 
-			if(pregunta4 == 1){
+			if(pregunta4 == 3){
 				resultado = (resultado + 1);
 			}
 
-			if(pregunta5 == 2){
+			if(pregunta5 == 4){
 				resultado = (resultado+1);
 			}
 
