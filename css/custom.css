@@ -1,28 +1,28 @@
 
-    .logoUnad{
-      padding: 20px 20px 20px 20px;
-    }
+.logoUnad{
+  padding: 20px 20px 20px 20px;
+}
 
 
-    .menu-fixed {
+.menu-fixed {
 
-      z-index:1000;
+  z-index:1000;
 
-      /*left:0;*/
-      /*Podemos hacer que el menu abarque el 100% al hacer scroll*/
-      box-shadow:0px 4px 3px rgba(0,0,0,.5);
-    }
+  /*left:0;*/
+  /*Podemos hacer que el menu abarque el 100% al hacer scroll*/
+  box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
 
-    footer{
-      background: #000;
-      height: auto;
-      text-align: center;
-      color: #fff;
-    }
+footer{
+  background: #000;
+  height: auto;
+  text-align: center;
+  color: #fff;
+}
 
-    #navbarCollapse ul i a{
-      font-color:red;
-    }
+#navbarCollapse ul i a{
+  font-color:red;
+}
 
 .col-center{
     float: none;
@@ -31,6 +31,7 @@
 
 .footerCustom{
   text-align: center;
+  font-size: 5px !important;
   color: #fff;
   padding:2px;
 }
@@ -282,6 +283,13 @@ a.socialIcon:hover, .socialHoverClass {
     background-color: rgba(25,96,184, 0.8);/*rgba(46,157,120, 0.7); */
     transition: all 0.3s ease-in-out;
 }
+
+.ejemplo-1 .mascara-green {
+    opacity: 0;
+    padding-top: 10%;
+    background-color: rgba(46,157,120, 0.7);
+    transition: all 0.3s ease-in-out;
+}
     .ejemplo-1 h2 {
         transform: translateX(-200px);
         opacity: 0;
@@ -482,4 +490,141 @@ a.socialIcon:hover, .socialHoverClass {
 .ejemplo-5:hover a.link{ 
     transform: scale(1);
     opacity: 1;
+}
+
+
+
+
+
+
+
+/*
+*
+*/
+
+
+                       
+
+                              span.sig{font-style:italic;
+                                       font-weight:bold;
+                                       color:#811919;}
+                     /* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+apacheconf+aspnet+bash+basic+c+csharp+cpp+coffeescript+ruby+css-extras+docker+git+go+haml+handlebars+jade+java+less+makefile+markdown+nginx+objectivec+php+php-extras+python+jsx+sass+scss+sql+stylus+swift+twig+vim */
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #f8f8f2;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  direction: ltr;
+  text-align: left;
+
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+ 
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+ 
+  border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+
+.token.punctuation {
+  color: #f8f8f2;
+}
+
+.namespace {
+  opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+  color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function {
+  color: #e6db74;
+}
+
+.token.keyword {
+  color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+  color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
 }
