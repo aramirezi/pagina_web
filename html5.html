@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="img/favicon.ico">
 
-    <title>GIT</title>
+    <title>HTML 5</title>
   
 	<!-- Font Awesome core CSS -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -38,7 +38,7 @@
     
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active menu-blue">
-              <a class="nav-link" href="git.html">GIT <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="git.html">GIT<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item menu-green">
               <a class="nav-link" href="html5.html">HTML 5</a>
@@ -69,8 +69,8 @@
  <br><br><br> 
  <div class="row">
     <div class="col-md-12" style="text-align: center;background-color: #e6ecf0;padding: 50px 0px 20px 0px;">
-        <img  class="text-center" src="img/git_logo.png" width="200"><br>
-        <h1 class="text-center featurette-heading" style="display: inline;font-size: 100px; ">GIT</h1>
+        <img  class="text-center" src="img/html5_logo.png" width="200"><br>
+        <h1 class="text-center featurette-heading" style="display: inline;font-size: 100px; "></h1>
     </div>
     </div>
 
@@ -95,9 +95,9 @@
 			        <div class="col-md-3">
 
 			        <ul class="nav nav-tabs">
-			          <li class="active activado"><a href="#a" data-toggle="tab">Instalación GIT</a></li>
-			          <li><a href="#b"  data-toggle="tab" >Configuración GITHUB</a></li>
-			          <li><a href="#c" data-toggle="tab">GITHUB Pages</a></li>
+			          <li class="active activado"><a href="#a" data-toggle="tab">Introducción</a></li>
+			          <li><a href="#b"  data-toggle="tab" >Estructura</a></li>
+			          <li><a href="#c" data-toggle="tab">Contenido</a></li>
 			          <li><a href="#d" data-toggle="tab">Actividad</a></li>
 			        </ul>
 			        </div>
@@ -106,35 +106,50 @@
 			        <div class="tab-content">
 			         <div class="tab-pane active" id="a">
 
-			              <h3 style="color: #f14e32;">Instalación de Git</h3>
+			              <h3 style="color: #f14e32;">Introducción a HTML5</h3>
 			              <br />
 
-			              <p>Antes de empezar a utilizar Git, tienes que instalarlo en tu computadora. Incluso si ya está instalado, este es posiblemente un buen momento para actualizarlo a su última versión. Puedes instalarlo como un paquete, a partir de un archivo instalador, o bajando el código fuente y compilándolo tú mismo.</p>
-
-			              <p>
-			                Git es un sistema multiplataforma, para realizar el proceso de descarga selecciona el sistema operativo con el  que cuentas.
+			              <p>HTML5, algunas de cuyas características inicialmente comenzaron a llegar a Gecko 1.8.1, es la versión más reciente de HTML estándar. Ofrece nuevas características que proporcionan no solo una amplia compatibilidad de medios, sino también una compatibilidad mejorada para la creación de aplicaciones web que pueden interactuar de una manera más sencilla y efectiva con el usuario, sus datos locales y los servidores.
 			              </p>
-			              <p>
-			                  <a target="__blanck" href="https://git-scm.com/download/mac"><i class="fa fa-apple"    style="font-size: 50px;padding-right: 20px;color:#ABB3B4;" aria-hidden="true"></i><span style="padding: 10px;">Mac</span></a><br><br>
+						
+						  <p>
+							Al estar HTML5 aún en la fase de diseño, son inevitables los cambios en las especificaciones. Debido a esto, algunos navegadores no admiten aún determinadas características. Sin embargo, Gecko (y por extensión, Firefox) tiene una compatibilidad inicial muy buena para HTML5 y se continúa trabajando para que sea compatible con cada vez más características. Puedes encontrar una lista de las características de HTML5 que admite Gecko en la página principal de HTML5.
+						  </p>
 
-			                  <a target="__blanck" href="https://git-scm.com/download/linux"> <i class="fa fa-linux"    style="font-size: 50px;padding-right: 20px;color:#000;" aria-hidden="true"></i><span style="padding: 10px;">Linux</span></a><br><br>
+						  <p>
+						  	El tipo de documento para HTML5 es muy sencillo. Para indicar que el contenido de tu HTML usa HTML5, simplemente utiliza:
+						  </p>
 
-			                  <a target="__blanck" href="https://git-scm.com/download/win"><i class="fa fa-windows"  style="font-size: 50px;padding-right: 20px;" aria-hidden="true"></i><span style="padding: 10px;">Windows</span></a><br><br>
-			              </p>
-
-			              <h3 style="color: #f14e32;">Configurando Git por primera vez</h3>
-			              <br />
-			              <p>
-			                Ahora que tienes Git en tu sistema, querrás hacer algunas cosas para personalizar tu entorno de Git. Sólo es necesario hacer estas cosas una vez; se mantendrán entre actualizaciones. También puedes cambiarlas en cualquier momento volviendo a ejecutar los comandos correspondientes.
-			              </p>
-
-			              <pre class=" language-php"><code class=" language-php">
-			                <span class="token comment" spellcheck="true">// Definimos el nombre de usuario</span>
-			                <span class="token php"><span class="token delimiter"> $ git config --global user.name "John Doe"</span> 
-			                <span class="token comment" spellcheck="true">// Definimos el emial del usuairo</span>
-			                <span class="token php"><span class="token delimiter"> $ git config --global user.email johndoe@example.com</span> 
+						  <pre class=" language-php"><code class=" language-php">
+			                <span class="token php"><span class="token delimiter"> <&#33;<span class="token constant">DOCTYPE</span> <span class="token php"><span class="token delimiter"> html> </span> </span> 
 			              </code>
 			              </pre>
+						  
+						  <p>
+						  	Este tipo de documento tan sencillo hará que incluso aquellos navegadores que no admiten actualmente HTML5 entren en modo estándar, lo que significa que interpretarán conforme a HTML5 las partes establecidas hace tiempo, al ignorar las nuevas características de HTML5 que no admiten.
+						  </p>
+
+						  <p>
+						  	Contiene un conjunto más amplio de tecnologías que permite a los sitios Web y a las aplicaciones ser más diversas y de gran alcance. A este conjunto se le llama HTML5 y amigos, a menudo reducido a HTML5 .
+						  </p>
+
+						  <p>
+						  	Diseñado para ser utilizable por todos los desarrolladores de Open Web, esta página referencía numerosos recursos sobre las tecnologías de HTML5, clasificados en varios grupos según su función.
+						  </p>
+			
+			              <p>
+			              	<ul>
+			              		<li>Semántica: Permite describir con mayor precisión cual es su contenido.</li>
+								<li>Conectividad: Permite comunicarse con el servidor de formas nuevas e innovadoras.</li>
+								Sin conexión y almacenamiento: Permite a las páginas web almacenar datos localmente en el lado del cliente y operar sin conexión de manera más eficiente.</li>
+								<li>Multimedia: Nos otorga un excelente soporte para utilizar contenido multimedia como lo son audio y video nativamente.</li>
+								<li>Gráficos y efectos 2D/3D: Proporciona una amplia gama de nuevas características que se ocupan de los gráficos en la web como lo son canvas 2D, WebGL, SVG, etc.</li>
+								<li>Rendimiento e Integración: Proporciona una mayor optimización de la velocidad y un mejor uso del hardware.</li>
+								<li>Acceso al dispositivo: Proporciona APIs para el uso de varios compomentes internos de entrada y salida de nuestro dispositivo.</li>
+								<li>CSS3: Nos ofrece una nueva gran variedad de opciones para hacer diseños más sofisticados.</li>
+							</ul>
+			              </p>
+
 			              
 			         </div>
 
@@ -142,19 +157,162 @@
 
 			         <div class="tab-pane" id="b">
 			              
-			              <h3 style="color: #f14e32;">Intalar y configurar el cliente GITHUB</h3>
+			              <h3 style="color: #f14e32;">Estructura basica de un documento de HTML5</h3>
 			              <br />
-			              <div style="text-align: center;"><img  class="text-center" src="img/github-logo.png" width="200"> <h3>GITHUB</h3></div><br>
-			            
-			              <br />
+			         
 			              <p>
-			                Para aprender como descargar y configurar el cliente github de escritorio da clic sobre el siguiente botón.
+			                Todos tenemos una estructura basica al realizar un sitio web y en HTML5 no hay excepción, lo que es muy facil de hacer ya que HTML5 tiende a ser una estructura muy semantica y es lo mejor de todo, sus etiquetas son muy básicas por eso vamos a ver como es una Estructura basica de un documento de HTML5. Este lenguaje tiende a hacerse mas simple y humano al escribir el código.
+			              </p>
+						  
+						  <p>
+						  	Empecemos con el  DOCTYPE, es muy sencillo de escribir y ha sido recortado,  después la etiqueta HTML la cual tiene el atributo LANG para el idioma del sitio.
+						  </p>
+
+						  <pre class=" language-php"><code class=" language-php">
+			                <span class="token php"><span class="token delimiter"> <&#33;<span class="token constant">DOCTYPE</span> <span class="token php"><span class="token delimiter"> html> </span> </span> 
+			                <html lang="en">
+			                <head>
+			              </code>
+			              </pre>
+
+			              <p>
+			              	Muy sencillo para empezar ¿no?, ahora toca el turno del titulo, este sigue siendo el mismo, con diferencia de la etiqueta META, donde le decimos al navegador que tipo de codificado es el documento html, de preferencia usemos el UTF-8 que acepta nuestros acentos y ñ con mas compatibilidad.
+						  </p>
+
+						  <p>
+							En realidad es algo demasiado corto y que no quita mucho tiempo, todo esto sigue estando en la etiqueta HEAD que no ha cambiado para nada, es algo muy parecido a XHTML, la cuestión es resumir el código.
+			              </p>
+						  
+						  <pre class=" language-php"><code class=" language-php">
+			                &lt;title&gt;Titulo de la web&lt;/title&gt;
+ 							&lt;meta&gt; charset="utf-8" /&gt;
+			              </code>
+			              </pre>
+
+			              <p>
+			              	Pasemos a las etiquetas link, son las que enlazan nuestros estilos CSS, los Favicones y los Feeds. Estas son muy cortas con excepción de el feed que sigue casi igual, solo que ahora usaremos algo que ya existia,  el atributo REL que usamos en los links para cuestiones de SEO.
+						  </p>
+
+						  <p>
+							REL es para decir, que estamos enlazando,  ya que el atributo TYPE no se utiliza a menos que usemos para enlazar el FEED.
+			              </p>
+						  
+						  <pre class=" language-php"><code class=" language-php">
+
+			                &lt;link rel="stylesheet" href="estilos.css" /&gt;
+ 
+							&lt;link rel="shortcut icon" href="/favicon.ico" /&gt;
+							 
+							&lt;link rel="alternate" title="Pozolería RSS" type="application/rss+xml" href="/feed.rss" /&gt;
+
+			              </code>
+			              </pre>
+
+						  <p>
+						  	Ya terminamos con la parte no visible de la pagina web, es el turno del cuerpo o BODY, esta etiqueta sigue siendo útil para lo mismo, pero a continuación empieza algo interesante que son las etiquetas de la estructura de el sitio visual.
+							La etiqueta HEADER es la cabecera donde va el nombre del sitio, el logotipo y descripción de la pagina web, ejemplo.
+						  </p>
+						 
+						  <p>
+						  	Recomiendo que solo se use un H1 en una cabecera por cuestiones de SEO, pero es posible poner mas de un H1 y HEADER.
+						  </p>
+
+						  
+						   <pre class=" language-php"><code class=" language-php">
+
+			                	&lt;body&gt;
+								&lt;header&gt;
+								     &lt;h1>Mi sitio web&lt;/h1&gt;
+								     &lt;p>Mi sitio web creado en html5&lt;/p&gt;
+								&lt;/header&gt;
+
+
+			              </code>
+			              </pre>
+						  
+						  <p>
+						  	Como pueden ver, la etiqueta HEADER es muy equivalente a crear un DIV con ID=”header”, pero ahora tenemos una etiqueta especial para ello.
+						  </p>
+
+						  <p>
+						  	Pasamos con el contenido o SECTION usando H2 de titulo y el contenido en etiquetas P dentro de una etiqueta llamada ARTICLE para articulos o post, esto por cuestiones de SEO que es muy recomendable tambien, ejemplo.
+						  </p>
+
+						  <pre class=" language-php"><code class=" language-php">
+
+			                	&lt;section&gt;
+							    &lt;article&gt;
+							        &lt;h2>Titilo de contenido&lt;h2&gt;
+							        &lt;p> Contenido (ademas de imagenes, citas, videos etc.) &lt;/p&gt;
+							    &lt;/article&gt;
+							    &lt;/section&gt;
+
+
+			              </code>
+			              </pre>
+
+			              <p>
+			              	SECTION es el equivalente a un DIV con ID=”contenido” y ARTICLE a un DIV con ID=”post” o “articulo”
+			              </p>
+						  
+						  <p>
+						  	Otra etiqueta interesante es la etiqueta ASIDE, lo que viene siendo nuestro SIDEBAR o barra lateral  y es muy facil de implementar con H3 de titulo y P de contenido dentro de ella.
+						  </p>
+						  
+						  <pre class=" language-php"><code class=" language-php">
+
+			                	&lt;aside&gt;
+								         &lt;h3&gt;Titulo de contenido&lt;/h3&gt;
+								         &lt;p&gt;contenido&lt;/p&gt;
+								&lt;/aside&gt;
+
+
+			              </code>
+			              </pre>
+
+			              <p>
+			              	ASIDE es nuestro equivalente a un DIV con ID=”sidebar” o “barra”
 			              </p>
 
-			              <div class="container">
+			              <p>
+			              	Y finalizando con el pie de la pagina con la etiqueta muy obvia FOOTER , un ejemplo.
+			              </p>
+
+			              <pre class=" language-php"><code class=" language-php">
+
+			                	&lt;footer&gt; &lt;/span&gt;
+									&lt;p style="padding-left: 30px;"&gt;
+										&lt;span style="color: #333399;"&gt; Creado por mi el 2011&lt;/span&gt;
+									&lt;/p&gt;
+									&lt;span style="color: #333399;"&gt;
+								&lt;/footer&gt;
+
+
+			              </code>
+			              </pre>
+						   
+						   <p>
+						   	FOOTER es nuestro equivalente a un DIV con ID=”footer” o “pie”
+						   </p>
+
+
+			         </div>
+
+
+
+			         <div class="tab-pane" id="c">
+			            <h3 style="color: #f14e32;">Contenidos en HTML5</h3>
+			            <br />
+
+			            <p>
+			            En este video aprenderá a utilizar las etiquetas SECTION, FOOTER, ASIDE, ARTICLE Y TIPOGRAFIA WEB.
+			            </p>
+
+
+			            <div class="container">
 			                
 			                 <!-- Button trigger modal -->
-			                <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/7ftwZ-MzxEQ?rel=0&showinfo=0" data-target="#myModal">
+			                <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/b3o5IpzsyaY?rel=0&showinfo=0" data-target="#myModal">
 			                  Ver vídeo
 			                </button>
 			                  
@@ -184,81 +342,8 @@
 			                </div> 
 			  
 			            </div>
-			         </div>
 
 
-
-			         <div class="tab-pane" id="c">
-			            <h3 style="color: #f14e32;">GITHUB Pages</h3>
-			            <br />
-
-			            <p>
-			            Se puedes almacenar cualquier código que quieras en un repositorio de Github, pero para usar la característica páginas de Github con pleno efecto, el código debe estar estructurado como un sitio web típico, por ejemplo que el punto de entrada primario sea un archivo HTML llamado index.html.
-			            </p>
-
-			            <p>
-			              La otra cosa que necesitas hacer antes de seguir adelante es inicializar el directorio de código como un repositorio Git. para hacer esto:
-			            </p>
-
-			            <p>
-			              Apunta la línea de comandos a tu directorio test-site (o como se llame el directorio que contiene tu sitio web). Para esto, usa el comando cd (Es decir "cambio de directorio"). Esto es lo que deberías digitar si has puesto tu sitio web en un directorio llamado test-site en tu escritorio:
-			            </p>
-
-			            <pre class=" language-php"><code class=" language-php">
-			              <span class="token php"><span class="token delimiter"> $ cd Desktop/test-site</span> 
-			            </code>
-			            </pre>
-
-			            <p>
-			              Cuando la línea comandos está apuntando hacia el interior del directorio de tu sitio web, digita el siguiente comando, que le dice a la herramienta git para convertir el directorio en un repositorio git:
-			            </p>
-
-			            <pre class=" language-php"><code class=" language-php">
-			              <span class="token php"><span class="token delimiter"> $ git init</span> 
-			            </code>
-			            </pre>
-			            
-			            <p>
-			              A continuación, tu necesitas crear un nuevo repositorio para colocar tus archivos en el. Has clic en el signo más (+) en la parte superior derecha de la página de inicio de GitHub, luego escoge Nuevo Repositorio.
-			            </p>
-			            <p>
-			              En esta página, en la caja Nombre del Repositorio, digita el nombre para tu repositorio de código, por ejemplo my-repository.
-			            </p>
-
-			            <h4 style="color: #f14e32;">Subiendo tus archivos a GitHub</h4>
-			            <br />
-
-			            <p>
-			              En la página actual, tú estás interesado en la sección …o empujar un repositorio existente desde la línea de comandos. Tú deberias ver dos lineas de código listado en esta sección. Copia la totalidad de la primera línea, pégala en la línea de comandos, presiona la tecla Enter. El comando debería mostrarte algo como esto:
-			            </p>
-
-			            <pre class=" language-php"><code class=" language-php">
-			              <span class="token php"><span class="token delimiter"> $ git remote add origin https://github.com/chrisdavidmills/my-repository.git</span> 
-			            </code>
-			            </pre>
-
-			            <p>
-			              A continuación, digita los siguientes dos comandos, presionando Enter despues de cada uno. Estos preparán el código para subirlo a GitHub, y pida a GIt que administre estos archivos.
-			            </p>
-			            
-			             <pre class=" language-php"><code class=" language-php">
-			              <span class="token php"><span class="token delimiter"> $ git add --all</span> 
-			              <span class="token php"><span class="token delimiter"> $ git commit -m 'adding my files to my repository</span> 
-			            </code>
-			            </pre>
-
-			            <p>
-			              Por último, empuja el código hasta GitHub yendo a la página de GitHub en la que estas e ingresando en la terminal el segundo de los dos comandos que vimos …o empuje un repositorio existente desde la sección de línea de comandos:
-			            </p>
-
-			             <pre class=" language-php"><code class=" language-php">
-			              <span class="token php"><span class="token delimiter"> $ git push -u origin master</span> 
-			            </code>
-			            </pre>
-
-			            <p>
-			              Ahora necesitas crear la rama gh-pages de tu repositorio; actualiza la página actual y verá una página del repositorio algo así como la de abajo. Tú necesitas presionar el boton que dice Branch: master, digita gh-pages en el campo de texto, luego presiona el boton azul que dice Create branch: gh-pages. Esto crea una rama de código especial llamada gh-pages que es publicada en una ubicación especial. La URL toma la forma username.github.io/my-repository-name, asi en mi caso de ejemplo, la URL debería ser https://aramirezi.github.io/pagina_web/. La página mostrada es la página index.html.
-			            </p>
 
 			         </div>
 
@@ -269,155 +354,131 @@
 			            <ul class="list-group">
 			              <li class="list-group-item active">Cuestionario</li>
 			              <li class="list-group-item">
-			                <h5>1. ¿Qué comando es necesario para crear un repositorio?</h5>
+			                <h5>1. La etiqueta <meta> ha de estar entre las etiquetas :</h5>
 
 			                <div class="custom-controls-stacked">
 			                  <label class="custom-control custom-radio">
 			                    <input id="opcion1" name="pregunta1" type="radio" value="1" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git status</span>
+			                    <span class="custom-control-description">&lt;body&gt; y &lt;/body&gt;</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="opcion2" name="pregunta1" type="radio" value="2" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git add</span>
+			                    <span class="custom-control-description">&lt;head&gt; y &lt;/head&gt;</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="opcion3" name="pregunta1" type="radio" value="3" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git init</span>
+			                    <span class="custom-control-description">&lt;title&gt; y &lt;/title&gt;</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="opcion4" name="pregunta1" type="radio" value="4" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git config</span>
+			                    <span class="custom-control-description">Ninguna de las anteriores</span>
 			                  </label>
 
 			                </div>
 			              </li>
 
 			              <li class="list-group-item">
-			                <h5>2. Si deseas obtener una copia de un repositorio Git existente en GitHub, el comando que necesitas es:</h5>
+			                <h5>2. La declaración permite que el navegador sepa que se trata de un documento Html 5 y por lo tanto aplicara la sintaxis y la gramática correspondiente al documento.</h5>
 
 			                <div class="custom-controls-stacked">
 			                  <label class="custom-control custom-radio">
 			                    <input id="p2opcion1" name="pregunta2" type="radio" value="1" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git commit</span>
+			                    <span class="custom-control-description">Verdadero</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p2opcion2" name="pregunta2" type="radio" value="2" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git add</span>
-			                  </label>
-
-			                  <label class="custom-control custom-radio">
-			                    <input id="p2opcion3" name="pregunta2" type="radio" value="3" class="custom-control-input">
-			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git log</span>
-			                  </label>
-
-			                  <label class="custom-control custom-radio">
-			                    <input id="p2opcion4" name="pregunta2" type="radio" value="4" class="custom-control-input">
-			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git clone</span>
+			                    <span class="custom-control-description">Falso</span>
 			                  </label>
 
 			                </div>
 			              </li>
 
 			              <li class="list-group-item">
-			                 <h5>3. ¿Cuál es el comando utilizado para listar los cambios (commits) que han producido en el repositorio?</h5>
+			                 <h5>3. ¿Es obligatorio especificar el juego de caracteres "charset" en HTML5?</h5>
 
 			                <div class="custom-controls-stacked">
 			                  <label class="custom-control custom-radio">
 			                    <input id="p3opcion1" name="pregunta3" type="radio" value="1" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git init</span>
+			                    <span class="custom-control-description">Verdadero</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p3opcion2" name="pregunta3" type="radio" value="2" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git status</span>
-			                  </label>
-
-			                  <label class="custom-control custom-radio">
-			                    <input id="p3opcion3" name="pregunta3" type="radio" value="3" class="custom-control-input">
-			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git tag</span>
-			                  </label>
-
-			                  <label class="custom-control custom-radio">
-			                    <input id="p3opcion4" name="pregunta3" type="radio" value="4" class="custom-control-input">
-			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git log</span>
+			                    <span class="custom-control-description">False</span>
 			                  </label>
 
 			                </div>
 			              </li>
 
 			              <li class="list-group-item">
-			                <h5>4. Lista todas las ramas (branches) disponibles localmente.</h5>
+			                <h5>4. Esta etiqueta mantiene el aspecto visual, es decir muestra el texto tal y como se ha escrito, respetando todos los espacios en blanco y todas las nuevas lineas.</h5>
 
 			                <div class="custom-controls-stacked">
 			                  <label class="custom-control custom-radio">
 			                    <input id="p4opcion1" name="pregunta4" type="radio" value="1" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git branch</span>
+			                    <span class="custom-control-description">&lt;br&gt;</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p4opcion2" name="pregunta4" type="radio" value="2" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git status</span>
+			                    <span class="custom-control-description">&lt;article&gt;</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p4opcion3" name="pregunta4" type="radio" value="3" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git log</span>
+			                    <span class="custom-control-description">&lt;p&gt;</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p34pcion4" name="pregunta4" type="radio" value="4" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git branch -r</span>
+			                    <span class="custom-control-description">&lt;pre&gt;</span>
 			                  </label>
 
 			                </div>
 			              </li>
 
 			              <li class="list-group-item">
-			                <h5>5. ¿Cuál de los siguientes comandos crea una nueva rama local llamada develop?</h5>
+			                <h5>5. ¿Qué tecnologias agrupa HTML5?</h5>
 
 			                <div class="custom-controls-stacked">
 			                  <label class="custom-control custom-radio">
 			                    <input id="p5opcion1" name="pregunta5" type="radio" value="1" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git add develop</span>
+			                    <span class="custom-control-description">HTML + Javascript</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p5opcion2" name="pregunta5" type="radio" value="2" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git checkout -b develop</span>
+			                    <span class="custom-control-description">HTML + CSS3 + Flash</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p5opcion3" name="pregunta5" type="radio" value="3" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">git checkout -- develop</span>
+			                    <span class="custom-control-description">HTML + CSS3 + Javascript</span>
 			                  </label>
 
 			                  <label class="custom-control custom-radio">
 			                    <input id="p5opcion4" name="pregunta5" type="radio" value="4" class="custom-control-input">
 			                    <span class="custom-control-indicator"></span>
-			                    <span class="custom-control-description">ggit checkout develop</span>
+			                    <span class="custom-control-description">HTML + CSS3</span>
 			                  </label>
 
 			                </div>
@@ -619,23 +680,23 @@
 			$(".alert-danger").css('display','none');
 
 
-			if(pregunta1 == 3){
+			if(pregunta1 == 2){
 				resultado = (resultado + 1);
 			}
 
-			if(pregunta2 == 4){
+			if(pregunta2 == 1){
 				resultado = (resultado + 1);
 			}
 
-			if(pregunta3 == 4){
+			if(pregunta3 == 2){
 				resultado = (resultado +1);
 			}
 
-			if(pregunta4 == 1){
+			if(pregunta4 == 4){
 				resultado = (resultado + 1);
 			}
 
-			if(pregunta5 == 2){
+			if(pregunta5 == 3){
 				resultado = (resultado+1);
 			}
 
